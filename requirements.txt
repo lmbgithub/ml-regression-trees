@@ -1,0 +1,3 @@
+# Only needed for `--uci`, which downloads the real dataset.
+# Everything else in this repository is standard library.
+ucimlrepo>=0.0.7
