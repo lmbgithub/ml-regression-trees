@@ -1,14 +1,15 @@
-# ml-regression-trees — three ways to get R² ≈ 0.98 on air quality
+# ml-regression-trees
 
-Linear regression and decision trees on UCI Air Quality. The usual write-up of
-this dataset reports an almost-perfect fit and concludes that the model works.
-It does not. There are three separate leaks available here, and this repository
-measures what each one is worth.
+Linear regression and decision trees on the UCI Air Quality dataset, used to
+measure what data leakage is worth.
 
-The finding: **they are not the same size of problem.** One is worth +0.48 R² in
-every single run. The other is smaller than its own run-to-run spread — a single
-experiment cannot establish even its sign. Both appear on the same list of
-things that invalidate a result.
+This dataset is commonly written up with an almost-perfect fit and the
+conclusion that the model works. It does not: three separate leaks are available
+here. The project measures each one, and the useful finding is that they are not
+the same size of problem. One is worth about +0.48 R² in every run; another is
+smaller than its own run-to-run spread, so a single experiment cannot establish
+even its sign — yet both appear on the same checklist of things that invalidate
+a result.
 
 **Standard library only. 101 tests.**
 
